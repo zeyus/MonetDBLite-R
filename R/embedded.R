@@ -43,7 +43,6 @@ monetdb_embedded_startup <- function(dir=":memory:", quiet=TRUE, sequential=TRUE
 }
 
 monetdb_embedded_query <- function(conn, query, execute=TRUE, resultconvert=TRUE, int64=FALSE) {
-  print('My function')
   if (!inherits(conn, MonetDBLite:::classname)) {
     stop("Invalid connection")
   }
